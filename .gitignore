@@ -1,4 +1,11 @@
-MyHomepage/*
-!MyHomepage/MyHomepage/Models/
 
+# Folders
+/MyHomepage/MyHomepage/bin/
+/MyHomepage/MyHomepage/Data/
+/MyHomepage/MyHomepage/obj/
+/MyHomepage/MyHomepage/Properties/
 
+# files
+*.log
+*.json
+*.sln
