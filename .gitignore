@@ -1,13 +1,14 @@
 
 # Folders
-/MyHomepage/.vs/
-/MyHomepage/MyHomepage/bin/
-/MyHomepage/MyHomepage/Data/
-/MyHomepage/MyHomepage/obj/
-/MyHomepage/MyHomepage/Properties/
-/MyHomepage/MyHomepage/Migrations/
+/.vs/
+/MyHomepage/bin/
+/MyHomepage/obj/
+/MyHomepage/Properties/
+/MyHomepage/Migrations/
 
 # files
 *.log
 *.json
 *.sln
+MyHomepage.csproj
+MyHomepage.csproj.user
