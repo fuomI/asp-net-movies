@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MyHomepage.Data;
+using MyHomepage.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,6 +10,13 @@ builder.Services.AddDbContext<MyHomepageContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyHomepageContext") ?? throw new InvalidOperationException("Connection string 'MyHomepageContext' not found.")));
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
