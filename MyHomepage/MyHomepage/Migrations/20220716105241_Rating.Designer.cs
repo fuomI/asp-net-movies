@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyHomepage.Data;
 
@@ -11,9 +12,10 @@ using MyHomepage.Data;
 namespace MyHomepage.Migrations
 {
     [DbContext(typeof(MyHomepageContext))]
-    partial class MyHomepageContextModelSnapshot : ModelSnapshot
+    [Migration("20220716105241_Rating")]
+    partial class Rating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
