@@ -5,6 +5,7 @@
 /MyHomepage/MyHomepage/Data/
 /MyHomepage/MyHomepage/obj/
 /MyHomepage/MyHomepage/Properties/
+/MyHomepage/MyHomepage/Migrations/
 
 # files
 *.log
